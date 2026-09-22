@@ -1,0 +1,6 @@
+{
+  "name": "RailGo - IRCTC Next-Gen Railway Portal",
+  "description": "Modern redesign for Indian Railways and IRCTC featuring direct train search, live PNR tracking, Vande Bharat corridor highlights, and transit services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
