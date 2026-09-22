@@ -1,0 +1,227 @@
+export const STATIONS = [
+  {
+    code: 'NDLS',
+    name: 'New Delhi',
+    railway: 'Northern Railway',
+    zoneInfo: 'Platforms 1–16',
+  },
+  {
+    code: 'MMCT',
+    name: 'Mumbai Central',
+    railway: 'Western Railway',
+    zoneInfo: 'Western Corridor',
+  },
+  {
+    code: 'CSMT',
+    name: 'Mumbai CSMT',
+    railway: 'Central Railway',
+    zoneInfo: 'Platforms 1–18',
+  },
+  {
+    code: 'BSB',
+    name: 'Varanasi Junction',
+    railway: 'Northern Railway',
+    zoneInfo: 'Varanasi Division',
+  },
+  {
+    code: 'ERS',
+    name: 'Kochi (Ernakulam)',
+    railway: 'Southern Railway',
+    zoneInfo: 'Thiruvananthapuram Division',
+  },
+  {
+    code: 'SBC',
+    name: 'Bengaluru City (KSR)',
+    railway: 'South Western Railway',
+    zoneInfo: 'Bengaluru Division',
+  },
+  {
+    code: 'MAO',
+    name: 'Madgaon Junction',
+    railway: 'Konkan Railway',
+    zoneInfo: 'Goa Coastal Link',
+  },
+  {
+    code: 'HWH',
+    name: 'Howrah Junction',
+    railway: 'Eastern Railway',
+    zoneInfo: 'Kolkata Main Hub',
+  },
+  {
+    code: 'MAS',
+    name: 'Chennai Central',
+    railway: 'Southern Railway',
+    zoneInfo: 'Chennai Division',
+  },
+  {
+    code: 'ADI',
+    name: 'Ahmedabad Junction',
+    railway: 'Western Railway',
+    zoneInfo: 'Gujarat Corridor',
+  }
+];
+
+export const INITIAL_RECENT_ROUTES = [
+  {
+    id: 'r1',
+    fromCode: 'ERS',
+    fromCity: 'Kochi (ERS)',
+    toCode: 'SBC',
+    toCity: 'Bengaluru (SBC)',
+    dateStr: '15 Sep',
+    classType: 'All Classes',
+    trainName: 'Vande Bharat 20642',
+  },
+  {
+    id: 'r2',
+    fromCode: 'NDLS',
+    fromCity: 'New Delhi (NDLS)',
+    toCode: 'BSB',
+    toCity: 'Varanasi (BSB)',
+    dateStr: '18 Sep',
+    classType: 'Executive AC',
+    trainName: 'Train 22436',
+  },
+  {
+    id: 'r3',
+    fromCode: 'CSMT',
+    fromCity: 'Mumbai (CSMT)',
+    toCode: 'MAO',
+    toCity: 'Madgaon (MAO)',
+    dateStr: '02 Oct',
+    classType: 'Tejas Express',
+    trainName: 'Tejas Express 22119',
+  }
+];
+
+export const SAMPLE_TRAINS = [
+  {
+    trainNumber: '12432',
+    trainName: 'Trivandrum Rajdhani Special',
+    trainType: 'Tejas Rajdhani',
+    departureTime: '16:55',
+    departureStation: 'New Delhi',
+    departureStationCode: 'NDLS',
+    arrivalTime: '08:35',
+    arrivalStation: 'Mumbai Central',
+    arrivalStationCode: 'MMCT',
+    duration: '15h 40m nonstop speed',
+    daysOfRun: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    punctualityScore: 98.4,
+    foodIncluded: true,
+    classes: [
+      { code: '3A', name: 'AC 3 Tier', price: 2450, status: 'AVAILABLE', seats: 48 },
+      { code: '2A', name: 'AC 2 Tier', price: 3580, status: 'AVAILABLE', seats: 14 },
+      { code: '1A', name: 'AC First Class', price: 5420, status: 'AVAILABLE', seats: 6 },
+    ],
+  },
+  {
+    trainNumber: '22436',
+    trainName: 'Vande Bharat Superfast Express',
+    trainType: 'Vande Bharat',
+    departureTime: '06:00',
+    departureStation: 'New Delhi',
+    departureStationCode: 'NDLS',
+    arrivalTime: '14:00',
+    arrivalStation: 'Varanasi Jn',
+    arrivalStationCode: 'BSB',
+    duration: '8h 00m',
+    daysOfRun: ['T', 'W', 'F', 'S', 'S'],
+    punctualityScore: 99.2,
+    foodIncluded: true,
+    classes: [
+      { code: 'CC', name: 'AC Chair Car', price: 1750, status: 'AVAILABLE', seats: 112 },
+      { code: 'EC', name: 'Exec Chair Car', price: 3300, status: 'AVAILABLE', seats: 24 },
+    ],
+  },
+  {
+    trainNumber: '12952',
+    trainName: 'Mumbai Tejas Rajdhani Express',
+    trainType: 'Tejas Rajdhani',
+    departureTime: '16:55',
+    departureStation: 'New Delhi',
+    departureStationCode: 'NDLS',
+    arrivalTime: '08:35',
+    arrivalStation: 'Mumbai Central',
+    arrivalStationCode: 'MMCT',
+    duration: '15h 40m',
+    daysOfRun: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    punctualityScore: 98.6,
+    foodIncluded: true,
+    classes: [
+      { code: '3A', name: 'AC 3 Tier', price: 2450, status: 'AVAILABLE', seats: 32 },
+      { code: '2A', name: 'AC 2 Tier', price: 3650, status: 'RAC', seats: 4 },
+      { code: '1A', name: 'AC 1st Class', price: 5540, status: 'AVAILABLE', seats: 8 },
+    ],
+  },
+  {
+    trainNumber: '12954',
+    trainName: 'August Kranti Tejas Rajdhani',
+    trainType: 'Tejas Rajdhani',
+    departureTime: '17:15',
+    departureStation: 'Hazrat Nizamuddin',
+    departureStationCode: 'NZM',
+    arrivalTime: '10:05',
+    arrivalStation: 'Mumbai Central',
+    arrivalStationCode: 'MMCT',
+    duration: '16h 50m',
+    daysOfRun: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    punctualityScore: 96.8,
+    foodIncluded: true,
+    classes: [
+      { code: '3A', name: 'AC 3 Tier', price: 2380, status: 'AVAILABLE', seats: 18 },
+      { code: '2A', name: 'AC 2 Tier', price: 3490, status: 'AVAILABLE', seats: 12 },
+      { code: '1A', name: 'AC 1st Class', price: 5390, status: 'WL', seats: 2 },
+    ],
+  },
+  {
+    trainNumber: '20642',
+    trainName: 'KSR Bengaluru Vande Bharat',
+    trainType: 'Vande Bharat',
+    departureTime: '05:10',
+    departureStation: 'Kochi (Ernakulam)',
+    departureStationCode: 'ERS',
+    arrivalTime: '13:50',
+    arrivalStation: 'Bengaluru City',
+    arrivalStationCode: 'SBC',
+    duration: '8h 40m',
+    daysOfRun: ['M', 'T', 'W', 'T', 'F', 'S'],
+    punctualityScore: 99.1,
+    foodIncluded: true,
+    classes: [
+      { code: 'CC', name: 'AC Chair Car', price: 1465, status: 'AVAILABLE', seats: 88 },
+      { code: 'EC', name: 'Executive Class', price: 2940, status: 'AVAILABLE', seats: 18 },
+    ],
+  }
+];
+
+export const SAMPLE_PNR = {
+  pnrNumber: '2458921473',
+  trainNumber: '12432',
+  trainName: 'NDLS MMCT RAJDHANI SPL',
+  doj: '22 Sep 2026',
+  from: 'New Delhi (NDLS)',
+  to: 'Mumbai Central (MMCT)',
+  boardingPoint: 'NDLS',
+  reservedUpto: 'MMCT',
+  classCode: '3A (AC 3 Tier)',
+  chartStatus: 'Chart Prepared',
+  passengers: [
+    {
+      number: 1,
+      bookingStatus: 'CNF',
+      currentStatus: 'CNF',
+      coach: 'B4',
+      berth: '35',
+      berthType: 'Middle Berth (MB)'
+    },
+    {
+      number: 2,
+      bookingStatus: 'CNF',
+      currentStatus: 'CNF',
+      coach: 'B4',
+      berth: '36',
+      berthType: 'Lower Berth (LB)'
+    }
+  ]
+};

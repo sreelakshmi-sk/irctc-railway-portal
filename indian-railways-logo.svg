@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Top Arc for circular text -->
+    <path id="top-arc" d="M 40,200 A 160,160 0 1,1 360,200" fill="none" />
+    <path id="text-arc" d="M 48,200 A 152,152 0 1,1 352,200" fill="none" />
+    <!-- Clip path for inner circle horizontal stripes -->
+    <clipPath id="inner-circle-clip">
+      <circle cx="200" cy="200" r="125" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Base -->
+  <circle cx="200" cy="200" r="196" fill="#152d80" stroke="#ffffff" stroke-width="3" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Circular Outer Text -->
+  <text fill="#ffffff" font-size="17.5" font-family="sans-serif" font-weight="900" letter-spacing="2">
+    <textPath href="#text-arc" startOffset="50%" text-anchor="middle">
+      भारतीय रेल  •  INDIAN RAILWAYS
+    </textPath>
+  </text>
+
+  <!-- Star Ring Separator Circles -->
+  <circle cx="200" cy="200" r="156" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+  <circle cx="200" cy="200" r="128" fill="none" stroke="#ffffff" stroke-width="2" />
+
+  <!-- 18 Stars around circumference -->
+  <g id="stars">
+    <path d="M 200.0,50.5 L 201.9,55.4 L 207.1,55.7 L 203.0,59.0 L 204.4,64.1 L 200.0,61.2 L 195.6,64.1 L 197.0,59.0 L 192.9,55.7 L 198.1,55.4 Z" fill="#ffffff" />
+    <path d="M 251.1,59.5 L 251.2,64.8 L 256.1,66.8 L 251.1,68.5 L 250.6,73.8 L 247.5,69.6 L 242.3,70.8 L 245.4,66.5 L 242.7,61.9 L 247.7,63.5 Z" fill="#ffffff" />
+    <path d="M 296.1,85.5 L 294.4,90.4 L 298.2,94.0 L 293.0,93.9 L 290.8,98.7 L 289.2,93.7 L 284.0,93.0 L 288.3,90.0 L 287.3,84.9 L 291.5,88.0 Z" fill="#ffffff" />
+    <path d="M 329.5,125.2 L 326.2,129.3 L 328.5,134.0 L 323.6,132.1 L 319.9,135.9 L 320.2,130.6 L 315.5,128.2 L 320.6,126.9 L 321.4,121.7 L 324.3,126.1 Z" fill="#ffffff" />
+    <path d="M 347.2,174.0 L 342.7,176.7 L 343.4,182.0 L 339.4,178.5 L 334.6,180.7 L 336.7,175.9 L 333.1,172.1 L 338.3,172.5 L 340.9,167.9 L 342.1,173.0 Z" fill="#ffffff" />
+    <path d="M 347.2,226.0 L 342.1,227.0 L 340.9,232.1 L 338.3,227.5 L 333.1,227.9 L 336.7,224.1 L 334.6,219.3 L 339.4,221.5 L 343.4,218.0 L 342.7,223.3 Z" fill="#ffffff" />
+    <path d="M 329.5,274.8 L 324.3,273.9 L 321.4,278.3 L 320.6,273.1 L 315.5,271.8 L 320.2,269.4 L 319.9,264.1 L 323.6,267.9 L 328.5,266.0 L 326.2,270.7 Z" fill="#ffffff" />
+    <path d="M 296.1,314.5 L 291.5,312.0 L 287.3,315.1 L 288.3,310.0 L 284.0,307.0 L 289.2,306.3 L 290.8,301.3 L 293.0,306.1 L 298.2,306.0 L 294.4,309.6 Z" fill="#ffffff" />
+    <path d="M 251.1,340.5 L 247.7,336.5 L 242.7,338.1 L 245.4,333.5 L 242.3,329.2 L 247.5,330.4 L 250.6,326.2 L 251.1,331.5 L 256.1,333.2 L 251.2,335.2 Z" fill="#ffffff" />
+    <path d="M 200.0,349.5 L 198.1,344.6 L 192.9,344.3 L 197.0,341.0 L 195.6,335.9 L 200.0,338.8 L 204.4,335.9 L 203.0,341.0 L 207.1,344.3 L 201.9,344.6 Z" fill="#ffffff" />
+    <path d="M 148.9,340.5 L 148.8,335.2 L 143.9,333.2 L 148.9,331.5 L 149.4,326.2 L 152.5,330.4 L 157.7,329.2 L 154.6,333.5 L 157.3,338.1 L 152.3,336.5 Z" fill="#ffffff" />
+    <path d="M 103.9,314.5 L 105.6,309.6 L 101.8,306.0 L 107.0,306.1 L 109.2,301.3 L 110.8,306.3 L 116.0,307.0 L 111.7,310.0 L 112.7,315.1 L 108.5,312.0 Z" fill="#ffffff" />
+    <path d="M 70.5,274.8 L 73.8,270.7 L 71.5,266.0 L 76.4,267.9 L 80.1,264.1 L 79.8,269.4 L 84.5,271.8 L 79.4,273.1 L 78.6,278.3 L 75.7,273.9 Z" fill="#ffffff" />
+    <path d="M 52.8,226.0 L 57.3,223.3 L 56.6,218.0 L 60.6,221.5 L 65.4,219.3 L 63.3,224.1 L 66.9,227.9 L 61.7,227.5 L 59.1,232.1 L 57.9,227.0 Z" fill="#ffffff" />
+    <path d="M 52.8,174.0 L 57.9,173.0 L 59.1,167.9 L 61.7,172.5 L 66.9,172.1 L 63.3,175.9 L 65.4,180.7 L 60.6,178.5 L 56.6,182.0 L 57.3,176.7 Z" fill="#ffffff" />
+    <path d="M 70.5,125.2 L 75.7,126.1 L 78.6,121.7 L 79.4,126.9 L 84.5,128.2 L 79.8,130.6 L 80.1,135.9 L 76.4,132.1 L 71.5,134.0 L 73.8,129.3 Z" fill="#ffffff" />
+    <path d="M 103.9,85.5 L 108.5,88.0 L 112.7,84.9 L 111.7,90.0 L 116.0,93.0 L 110.8,93.7 L 109.2,98.7 L 107.0,93.9 L 101.8,94.0 L 105.6,90.4 Z" fill="#ffffff" />
+    <path d="M 148.9,59.5 L 152.3,63.5 L 157.3,61.9 L 154.6,66.5 L 157.7,70.8 L 152.5,69.6 L 149.4,73.8 L 148.9,68.5 L 143.9,66.8 L 148.8,64.8 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Inner Circle with Horizontal Speed Stripes -->
+  <g clip-path="url(#inner-circle-clip)">
+    <circle cx="200" cy="200" r="125" fill="#152d80" />
+    <line x1="65" y1="85" x2="335" y2="85" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="99" x2="335" y2="99" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="113" x2="335" y2="113" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="127" x2="335" y2="127" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="141" x2="335" y2="141" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="155" x2="335" y2="155" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="169" x2="335" y2="169" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="183" x2="335" y2="183" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="197" x2="335" y2="197" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="211" x2="335" y2="211" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="225" x2="335" y2="225" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="239" x2="335" y2="239" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="253" x2="335" y2="253" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="267" x2="335" y2="267" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="281" x2="335" y2="281" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="295" x2="335" y2="295" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+    <line x1="65" y1="309" x2="335" y2="309" stroke="#ffffff" stroke-width="1.8" opacity="0.4" />
+  </g>
+
+  <!-- Locomotive Train Illustration in Center -->
+  <g id="locomotive" transform="translate(0, 0)">
+    <!-- Pantograph on Roof -->
+    <path d="M 165,115 L 188,94 L 212,94 L 235,115" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" />
+    <line x1="184" y1="94" x2="216" y2="94" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="175" y1="105" x2="225" y2="105" stroke="#ffffff" stroke-width="2" />
+    <line x1="200" y1="94" x2="200" y2="115" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Train Roof & Body Outer Silhouette (White & Navy) -->
+    <!-- Perspective Side -->
+    <path d="M 200,115 L 245,130 L 255,235 L 225,260 L 200,265 Z" fill="#1e3a8a" stroke="#ffffff" stroke-width="2" />
+    <!-- Front Face -->
+    <path d="M 155,130 L 200,115 L 245,130 L 240,240 L 200,265 L 160,240 Z" fill="#ffffff" stroke="#152d80" stroke-width="2" />
+    
+    <!-- Windshield -->
+    <path d="M 164,138 L 198,126 L 198,162 L 167,162 Z" fill="#152d80" stroke="#ffffff" stroke-width="1.5" />
+    <path d="M 202,126 L 236,138 L 233,162 L 202,162 Z" fill="#152d80" stroke="#ffffff" stroke-width="1.5" />
+    
+    <!-- Center Headlight Cluster -->
+    <circle cx="200" cy="122" r="5" fill="#fef08a" stroke="#152d80" stroke-width="1" />
+    <circle cx="200" cy="122" r="2.5" fill="#ffffff" />
+
+    <!-- Front Nose Center Emblem Plate with Ashoka Lion Symbol -->
+    <circle cx="200" cy="195" r="22" fill="#152d80" stroke="#ffffff" stroke-width="2" />
+    <!-- Simplified Lion Capital (3 lions & abacus) in Center -->
+    <path d="M 193,184 C 193,180 197,178 200,178 C 203,178 207,180 207,184 L 205,196 L 195,196 Z" fill="#ffffff" />
+    <path d="M 188,187 C 188,183 192,182 195,183 L 195,196 L 189,196 Z" fill="#e2e8f0" />
+    <path d="M 212,187 C 212,183 208,182 205,183 L 205,196 L 211,196 Z" fill="#e2e8f0" />
+    <!-- Ashoka Chakra Wheel -->
+    <circle cx="200" cy="201" r="5" fill="#ffffff" stroke="#152d80" stroke-width="0.8" />
+    <!-- Abacus Base -->
+    <rect x="186" y="206" width="28" height="3.5" rx="1" fill="#ffffff" />
+
+    <!-- Lower Grille & Buffers -->
+    <circle cx="168" cy="234" r="6" fill="#152d80" stroke="#ffffff" stroke-width="1.5" />
+    <circle cx="232" cy="234" r="6" fill="#152d80" stroke="#ffffff" stroke-width="1.5" />
+    <rect x="180" y="226" width="40" height="8" rx="2" fill="#152d80" />
+    <line x1="184" y1="230" x2="216" y2="230" stroke="#ffffff" stroke-width="1.5" />
+
+    <!-- Cowcatcher / Pilot -->
+    <path d="M 160,244 L 200,266 L 240,244 L 235,256 L 200,274 L 165,256 Z" fill="#ffffff" stroke="#152d80" stroke-width="1.5" />
+    <line x1="178" y1="252" x2="178" y2="262" stroke="#152d80" stroke-width="1.5" />
+    <line x1="200" y1="256" x2="200" y2="272" stroke="#152d80" stroke-width="1.5" />
+    <line x1="222" y1="252" x2="222" y2="262" stroke="#152d80" stroke-width="1.5" />
+
+    <!-- Perspective Railway Tracks -->
+    <!-- Left Rail -->
+    <line x1="175" y1="266" x2="135" y2="322" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <!-- Right Rail -->
+    <line x1="225" y1="266" x2="265" y2="322" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Sleepers / Ties -->
+    <line x1="170" y1="275" x2="230" y2="275" stroke="#ffffff" stroke-width="3" />
+    <line x1="160" y1="288" x2="240" y2="288" stroke="#ffffff" stroke-width="3.5" />
+    <line x1="148" y1="303" x2="252" y2="303" stroke="#ffffff" stroke-width="4" />
+    <line x1="134" y1="319" x2="266" y2="319" stroke="#ffffff" stroke-width="4.5" />
+  </g>
+
+  <!-- Bottom Accent Stars -->
+  <path d="M 200.0,344.0 L 202.8,351.1 L 210.5,351.6 L 204.6,356.5 L 206.5,363.9 L 200.0,359.8 L 193.5,363.9 L 195.4,356.5 L 189.5,351.6 L 197.2,351.1 Z" fill="#ffffff" />
+  <path d="M 168.5,342.6 L 171.3,347.1 L 176.5,346.3 L 173.2,350.4 L 175.5,355.1 L 170.6,353.1 L 166.9,356.8 L 167.2,351.6 L 162.5,349.1 L 167.6,347.8 Z" fill="#ffffff" />
+  <path d="M 231.5,342.6 L 232.4,347.8 L 237.5,349.1 L 232.8,351.6 L 233.1,356.8 L 229.4,353.1 L 224.5,355.1 L 226.8,350.4 L 223.5,346.3 L 228.7,347.1 Z" fill="#ffffff" />
+</svg>
